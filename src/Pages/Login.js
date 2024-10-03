@@ -29,7 +29,7 @@ const Login = () => {
       }
     });
     document.title = "Login";
-  }, [auth]);
+  }, );
 
   const resetErrors = () => {
     setError("");
@@ -133,7 +133,7 @@ const Login = () => {
           </div>
           <span className="error">{error}</span>
 
-          <button className="btn" onClick={handleSignIn}>
+          <button className="btn" onClick={handleSignIn} style={{color:"white"}}>
             Login
           </button>
           <span
